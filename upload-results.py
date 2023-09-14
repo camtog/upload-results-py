@@ -26,14 +26,16 @@ def upload_results(host, api_key, scanner, result_file, engagement_id, lead_id, 
     }
 
     files = {'file': open(result_file, 'rb')}
-
-    response = requests.post(
-        IMPORT_SCAN_URL,
-        headers=headers,
-        files=files,
-        json=json_data,
-        verify=verify
+    
     )
+    response = requests.post(
+    IMPORT_SCAN_URL,
+    headers=headers,
+    files=files,
+    json=json_data,
+    # Remove verify=False here
+)
+
 
     return response.status_code
 
