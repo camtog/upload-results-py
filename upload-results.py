@@ -32,7 +32,7 @@ def upload_results(host, api_key, scanner, result_file, engagement_id, lead_id, 
     headers=headers,
     files=files,
     json=json_data,
-    verify=False here
+    verify=False
     )
 
 
