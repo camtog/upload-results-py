@@ -34,7 +34,7 @@ def upload_results(host, api_key, scanner, result_file, engagement_id, lead_id, 
     files=files,
     json=json_data,
     # Remove verify=False here
-)
+    )
 
 
     return response.status_code
