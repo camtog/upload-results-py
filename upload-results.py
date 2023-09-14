@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 import argparse
 from datetime import datetime
 import json
@@ -35,7 +36,7 @@ def upload_results(host, api_key, scanner, result_file, engagement_id, lead_id, 
     )
 
     return response.status_code
-    
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='CI/CD integration for DefectDojo')
     parser.add_argument('--host', help="DefectDojo Hostname", required=True)
